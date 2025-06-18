@@ -56,6 +56,14 @@ function M.start()
     return
   end
 
+  if vim.fn.executable(config.cmd) == 0 then
+    vim.notify(
+      "❌ " .. config.cmd .. " not found in PATH.\nInstall it with:\n cargo install markdown-live-preview",
+      vim.log.levels.ERROR
+    )
+    return
+  end
+
   if job_id then
     vim.notify(":🔁 Already running", vim.log.levels.WARN)
     return

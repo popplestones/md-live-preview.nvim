@@ -27,7 +27,12 @@ Integrates seamlessly with a companion server ([markdown-live-preview](https://g
 ### 📦 Requirements
 
 - Neovim 0.9+
-- Rust installed with [markdown-live-preview](https://github.com/popplestones/markdown-live-preview) built and available in `$PATH`
+- Rust installed (`cargo`) and the `markdown-live-preview` binary installed:
+
+```sh
+cargo install markdown-live-preview
+```
+Make sure it's available in your `$PATH`.
 
 ### 🧑‍💻 Installation (Lazy.nvim)
 

@@ -43,7 +43,7 @@ end
 function M.setup(opts)
   config = vim.tbl_deep_extend("force", {
     verbose = false,
-    cmd = "markdown-preview-server",
+    cmd = "markdown-live-preview",
   }, opts or {})
 
   vim.api.nvim_create_user_command("MDPreviewStart", M.start, {})
